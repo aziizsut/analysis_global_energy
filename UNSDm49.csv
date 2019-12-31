@@ -1,0 +1,249 @@
+region,subs,country,ISO,development
+Africa,Northern Africa,Algeria,DZA,Developing
+Africa,Northern Africa,Egypt,EGY,Developing
+Africa,Northern Africa,Libya,LBY,Developing
+Africa,Northern Africa,Morocco,MAR,Developing
+Africa,Northern Africa,Sudan,SDN,Developing
+Africa,Northern Africa,Tunisia,TUN,Developing
+Africa,Northern Africa,Western Sahara,ESH,Developing
+Africa,Sub-Saharan Africa,British Indian Ocean Territory,IOT,Developing
+Africa,Sub-Saharan Africa,Burundi,BDI,Developing
+Africa,Sub-Saharan Africa,Comoros,COM,Developing
+Africa,Sub-Saharan Africa,Djibouti,DJI,Developing
+Africa,Sub-Saharan Africa,Eritrea,ERI,Developing
+Africa,Sub-Saharan Africa,Ethiopia,ETH,Developing
+Africa,Sub-Saharan Africa,French Southern Territories,ATF,Developing
+Africa,Sub-Saharan Africa,Kenya,KEN,Developing
+Africa,Sub-Saharan Africa,Madagascar,MDG,Developing
+Africa,Sub-Saharan Africa,Malawi,MWI,Developing
+Africa,Sub-Saharan Africa,Mauritius,MUS,Developing
+Africa,Sub-Saharan Africa,Mayotte,MYT,Developing
+Africa,Sub-Saharan Africa,Mozambique,MOZ,Developing
+Africa,Sub-Saharan Africa,Réunion,REU,Developing
+Africa,Sub-Saharan Africa,Rwanda,RWA,Developing
+Africa,Sub-Saharan Africa,Seychelles,SYC,Developing
+Africa,Sub-Saharan Africa,Somalia,SOM,Developing
+Africa,Sub-Saharan Africa,South Sudan,SSD,Developing
+Africa,Sub-Saharan Africa,Uganda,UGA,Developing
+Africa,Sub-Saharan Africa,United Republic of Tanzania,TZA,Developing
+Africa,Sub-Saharan Africa,Zambia,ZMB,Developing
+Africa,Sub-Saharan Africa,Zimbabwe,ZWE,Developing
+Africa,Sub-Saharan Africa,Angola,AGO,Developing
+Africa,Sub-Saharan Africa,Cameroon,CMR,Developing
+Africa,Sub-Saharan Africa,Central African Republic,CAF,Developing
+Africa,Sub-Saharan Africa,Chad,TCD,Developing
+Africa,Sub-Saharan Africa,Congo,COG,Developing
+Africa,Sub-Saharan Africa,Democratic Republic of the Congo,COD,Developing
+Africa,Sub-Saharan Africa,Equatorial Guinea,GNQ,Developing
+Africa,Sub-Saharan Africa,Gabon,GAB,Developing
+Africa,Sub-Saharan Africa,Sao Tome and Principe,STP,Developing
+Africa,Sub-Saharan Africa,Botswana,BWA,Developing
+Africa,Sub-Saharan Africa,Eswatini,SWZ,Developing
+Africa,Sub-Saharan Africa,Lesotho,LSO,Developing
+Africa,Sub-Saharan Africa,Namibia,NAM,Developing
+Africa,Sub-Saharan Africa,South Africa,ZAF,Developing
+Africa,Sub-Saharan Africa,Benin,BEN,Developing
+Africa,Sub-Saharan Africa,Burkina Faso,BFA,Developing
+Africa,Sub-Saharan Africa,Cabo Verde,CPV,Developing
+Africa,Sub-Saharan Africa,Côte d’Ivoire,CIV,Developing
+Africa,Sub-Saharan Africa,Gambia,GMB,Developing
+Africa,Sub-Saharan Africa,Ghana,GHA,Developing
+Africa,Sub-Saharan Africa,Guinea,GIN,Developing
+Africa,Sub-Saharan Africa,Guinea-Bissau,GNB,Developing
+Africa,Sub-Saharan Africa,Liberia,LBR,Developing
+Africa,Sub-Saharan Africa,Mali,MLI,Developing
+Africa,Sub-Saharan Africa,Mauritania,MRT,Developing
+Africa,Sub-Saharan Africa,Niger,NER,Developing
+Africa,Sub-Saharan Africa,Nigeria,NGA,Developing
+Africa,Sub-Saharan Africa,Saint Helena,SHN,Developing
+Africa,Sub-Saharan Africa,Senegal,SEN,Developing
+Africa,Sub-Saharan Africa,Sierra Leone,SLE,Developing
+Africa,Sub-Saharan Africa,Togo,TGO,Developing
+Americas,Caribbean,Anguilla,AIA,Developing
+Americas,Caribbean,Antigua and Barbuda,ATG,Developing
+Americas,Caribbean,Aruba,ABW,Developing
+Americas,Caribbean,Bahamas,BHS,Developing
+Americas,Caribbean,Barbados,BRB,Developing
+Americas,Caribbean,Bonaire  Sint Eustatius and Saba,BES,Developing
+Americas,Caribbean,British Virgin Islands,VGB,Developing
+Americas,Caribbean,Cayman Islands,CYM,Developing
+Americas,Caribbean,Cuba,CUB,Developing
+Americas,Caribbean,Curaçao,CUW,Developing
+Americas,Caribbean,Dominica,DMA,Developing
+Americas,Caribbean,Dominican Republic,DOM,Developing
+Americas,Caribbean,Grenada,GRD,Developing
+Americas,Caribbean,Guadeloupe,GLP,Developing
+Americas,Caribbean,Haiti,HTI,Developing
+Americas,Caribbean,Jamaica,JAM,Developing
+Americas,Caribbean,Martinique,MTQ,Developing
+Americas,Caribbean,Montserrat,MSR,Developing
+Americas,Caribbean,Puerto Rico,PRI,Developing
+Americas,Caribbean,Saint Barthélemy,BLM,Developing
+Americas,Caribbean,Saint Kitts and Nevis,KNA,Developing
+Americas,Caribbean,Saint Lucia,LCA,Developing
+Americas,Caribbean,Saint Martin (French Part),MAF,Developing
+Americas,Caribbean,Saint Vincent and the Grenadines,VCT,Developing
+Americas,Caribbean,Sint Maarten (Dutch part),SXM,Developing
+Americas,Caribbean,Trinidad and Tobago,TTO,Developing
+Americas,Caribbean,Turks and Caicos Islands,TCA,Developing
+Americas,Caribbean,United States Virgin Islands,VIR,Developing
+Americas,Central America,Belize,BLZ,Developing
+Americas,Central America,Costa Rica,CRI,Developing
+Americas,Central America,El Salvador,SLV,Developing
+Americas,Central America,Guatemala,GTM,Developing
+Americas,Central America,Honduras,HND,Developing
+Americas,Central America,Mexico,MEX,Developing
+Americas,Central America,Nicaragua,NIC,Developing
+Americas,Central America,Panama,PAN,Developing
+Americas,South America,Argentina,ARG,Developing
+Americas,South America,Bolivia (Plurinational State of),BOL,Developing
+Americas,South America,Bouvet Island,BVT,Developing
+Americas,South America,Brazil,BRA,Developing
+Americas,South America,Chile,CHL,Developing
+Americas,South America,Colombia,COL,Developing
+Americas,South America,Ecuador,ECU,Developing
+Americas,South America,Falkland Islands (Malvinas),FLK,Developing
+Americas,South America,French Guiana,GUF,Developing
+Americas,South America,Guyana,GUY,Developing
+Americas,South America,Paraguay,PRY,Developing
+Americas,South America,Peru,PER,Developing
+Americas,South America,South Georgia and the South Sandwich Islands,SGS,Developing
+Americas,South America,Suriname,SUR,Developing
+Americas,South America,Uruguay,URY,Developing
+Americas,South America,Venezuela (Bolivarian Republic of),VEN,Developing
+Americas,Northern America,Bermuda,BMU,Developed
+Americas,Northern America,Canada,CAN,Developed
+Americas,Northern America,Greenland,GRL,Developed
+Americas,Northern America,Saint Pierre and Miquelon,SPM,Developed
+Americas,Northern America,United States of America,USA,Developed
+Asia,Central Asia,Kazakhstan,KAZ,Developing
+Asia,Central Asia,Kyrgyzstan,KGZ,Developing
+Asia,Central Asia,Tajikistan,TJK,Developing
+Asia,Central Asia,Turkmenistan,TKM,Developing
+Asia,Central Asia,Uzbekistan,UZB,Developing
+Asia,Eastern Asia,China,CHN,Developing
+Asia,Eastern Asia,Hong Kong Special Administrative Region,HKG,Developing
+Asia,Eastern Asia,Macao Special Administrative Region,MAC,Developing
+Asia,Eastern Asia,Democratic People's Republic of Korea,PRK,Developing
+Asia,Eastern Asia,Japan,JPN,Developed
+Asia,Eastern Asia,Mongolia,MNG,Developing
+Asia,Eastern Asia,Republic of Korea,KOR,Developing
+Asia,South-eastern Asia,Brunei Darussalam,BRN,Developing
+Asia,South-eastern Asia,Cambodia,KHM,Developing
+Asia,South-eastern Asia,Indonesia,IDN,Developing
+Asia,South-eastern Asia,Lao People's Democratic Republic,LAO,Developing
+Asia,South-eastern Asia,Malaysia,MYS,Developing
+Asia,South-eastern Asia,Myanmar,MMR,Developing
+Asia,South-eastern Asia,Philippines,PHL,Developing
+Asia,South-eastern Asia,Singapore,SGP,Developing
+Asia,South-eastern Asia,Thailand,THA,Developing
+Asia,South-eastern Asia,Timor-Leste,TLS,Developing
+Asia,South-eastern Asia,Viet Nam,VNM,Developing
+Asia,Southern Asia,Afghanistan,AFG,Developing
+Asia,Southern Asia,Bangladesh,BGD,Developing
+Asia,Southern Asia,Bhutan,BTN,Developing
+Asia,Southern Asia,India,IND,Developing
+Asia,Southern Asia,Iran (Islamic Republic of),IRN,Developing
+Asia,Southern Asia,Maldives,MDV,Developing
+Asia,Southern Asia,Nepal,NPL,Developing
+Asia,Southern Asia,Pakistan,PAK,Developing
+Asia,Southern Asia,Sri Lanka,LKA,Developing
+Asia,Western Asia,Armenia,ARM,Developing
+Asia,Western Asia,Azerbaijan,AZE,Developing
+Asia,Western Asia,Bahrain,BHR,Developing
+Asia,Western Asia,Cyprus,CYP,Developed
+Asia,Western Asia,Georgia,GEO,Developing
+Asia,Western Asia,Iraq,IRQ,Developing
+Asia,Western Asia,Israel,ISR,Developed
+Asia,Western Asia,Jordan,JOR,Developing
+Asia,Western Asia,Kuwait,KWT,Developing
+Asia,Western Asia,Lebanon,LBN,Developing
+Asia,Western Asia,Oman,OMN,Developing
+Asia,Western Asia,Qatar,QAT,Developing
+Asia,Western Asia,Saudi Arabia,SAU,Developing
+Asia,Western Asia,State of Palestine,PSE,Developing
+Asia,Western Asia,Syrian Arab Republic,SYR,Developing
+Asia,Western Asia,Turkey,TUR,Developing
+Asia,Western Asia,United Arab Emirates,ARE,Developing
+Asia,Western Asia,Yemen,YEM,Developing
+Europe,Eastern Europe,Belarus,BLR,Developed
+Europe,Eastern Europe,Bulgaria,BGR,Developed
+Europe,Eastern Europe,Czechia,CZE,Developed
+Europe,Eastern Europe,Hungary,HUN,Developed
+Europe,Eastern Europe,Poland,POL,Developed
+Europe,Eastern Europe,Republic of Moldova,MDA,Developed
+Europe,Eastern Europe,Romania,ROU,Developed
+Europe,Eastern Europe,Russian Federation,RUS,Developed
+Europe,Eastern Europe,Slovakia,SVK,Developed
+Europe,Eastern Europe,Ukraine,UKR,Developed
+Europe,Northern Europe,Åland Islands,ALA,Developed
+Europe,Northern Europe,Guernsey,GGY,Developed
+Europe,Northern Europe,Jersey,JEY,Developed
+Europe,Northern Europe,Sark,,Developed
+Europe,Northern Europe,Denmark,DNK,Developed
+Europe,Northern Europe,Estonia,EST,Developed
+Europe,Northern Europe,Faroe Islands,FRO,Developed
+Europe,Northern Europe,Finland,FIN,Developed
+Europe,Northern Europe,Iceland,ISL,Developed
+Europe,Northern Europe,Ireland,IRL,Developed
+Europe,Northern Europe,Isle of Man,IMN,Developed
+Europe,Northern Europe,Latvia,LVA,Developed
+Europe,Northern Europe,Lithuania,LTU,Developed
+Europe,Northern Europe,Norway,NOR,Developed
+Europe,Northern Europe,Svalbard and Jan Mayen Islands,SJM,Developed
+Europe,Northern Europe,Sweden,SWE,Developed
+Europe,Northern Europe,United Kingdom of Great Britain and Northern Ireland,GBR,Developed
+Europe,Southern Europe,Albania,ALB,Developed
+Europe,Southern Europe,Andorra,AND,Developed
+Europe,Southern Europe,Bosnia and Herzegovina,BIH,Developed
+Europe,Southern Europe,Croatia,HRV,Developed
+Europe,Southern Europe,Gibraltar,GIB,Developed
+Europe,Southern Europe,Greece,GRC,Developed
+Europe,Southern Europe,Holy See,VAT,Developed
+Europe,Southern Europe,Italy,ITA,Developed
+Europe,Southern Europe,Malta,MLT,Developed
+Europe,Southern Europe,Montenegro,MNE,Developed
+Europe,Southern Europe,North Macedonia,MKD,Developed
+Europe,Southern Europe,Portugal,PRT,Developed
+Europe,Southern Europe,San Marino,SMR,Developed
+Europe,Southern Europe,Serbia,SRB,Developed
+Europe,Southern Europe,Slovenia,SVN,Developed
+Europe,Southern Europe,Spain,ESP,Developed
+Europe,Western Europe,Austria,AUT,Developed
+Europe,Western Europe,Belgium,BEL,Developed
+Europe,Western Europe,France,FRA,Developed
+Europe,Western Europe,Germany,DEU,Developed
+Europe,Western Europe,Liechtenstein,LIE,Developed
+Europe,Western Europe,Luxembourg,LUX,Developed
+Europe,Western Europe,Monaco,MCO,Developed
+Europe,Western Europe,Netherlands,NLD,Developed
+Europe,Western Europe,Switzerland,CHE,Developed
+Oceania,Oceania,Australia,AUS,Developed
+Oceania,Oceania,Christmas Island,CXR,Developed
+Oceania,Oceania,Cocos (Keeling) Islands,CCK,Developed
+Oceania,Oceania,Heard Island and McDonald Islands,HMD,Developed
+Oceania,Oceania,New Zealand,NZL,Developed
+Oceania,Oceania,Norfolk Island,NFK,Developed
+Oceania,Melanesia,Fiji,FJI,Developing
+Oceania,Melanesia,New Caledonia,NCL,Developing
+Oceania,Melanesia,Papua New Guinea,PNG,Developing
+Oceania,Melanesia,Solomon Islands,SLB,Developing
+Oceania,Melanesia,Vanuatu,VUT,Developing
+Oceania,Micronesia,Guam,GUM,Developing
+Oceania,Micronesia,Kiribati,KIR,Developing
+Oceania,Micronesia,Marshall Islands,MHL,Developing
+Oceania,Micronesia,Micronesia (Federated States of),FSM,Developing
+Oceania,Micronesia,Nauru,NRU,Developing
+Oceania,Micronesia,Northern Mariana Islands,MNP,Developing
+Oceania,Micronesia,Palau,PLW,Developing
+Oceania,Micronesia,United States Minor Outlying Islands,UMI,Developing
+Oceania,Polynesia,American Samoa,ASM,Developing
+Oceania,Polynesia,Cook Islands,COK,Developing
+Oceania,Polynesia,French Polynesia,PYF,Developing
+Oceania,Polynesia,Niue,NIU,Developing
+Oceania,Polynesia,Pitcairn,PCN,Developing
+Oceania,Polynesia,Samoa,WSM,Developing
+Oceania,Polynesia,Tokelau,TKL,Developing
+Oceania,Polynesia,Tonga,TON,Developing
+Oceania,Polynesia,Tuvalu,TUV,Developing
+Oceania,Polynesia,Wallis and Futuna Islands,WLF,Developing
