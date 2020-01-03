@@ -30,7 +30,8 @@ distance_table <- read_csv("distance.csv") %>%
 
 find_distance <- function(sotong){
   # First find the distance between the importer and supplier countries
-  pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld$importer[sotong]) %>% rename(fob = value) %>% 
+  pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld_oil$importer[sotong]) %>% filter(!exporter %in% rem_exporter_list) %>% 
+    rename(fob = value) %>% 
     select(importer, exporter, fob) %>% left_join(distance_table, by = c("importer" = "iso_d", "exporter" = "iso_o")) %>% 
     select(importer, exporter, dist, distcap)
   
@@ -39,7 +40,8 @@ find_distance <- function(sotong){
 
 find_Mdistance <- function(sotong){
   
-  pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld$importer[sotong]) %>% rename(fob = value) %>% 
+  pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld_oil$importer[sotong]) %>% filter(!exporter %in% rem_exporter_list) %>% 
+    rename(fob = value) %>% 
     select(importer, exporter, fob) %>% left_join(distance_table, by = c("importer" = "iso_d", "exporter" = "iso_o")) %>% 
     select(importer, exporter, dist, distcap) %>% summarise(mean_distance = mean(distcap, na.rm = TRUE))
   
@@ -59,7 +61,6 @@ table_distance <- pld %>% select(period, importer) %>% bind_cols(distance_coal, 
 
 pld$coal_distance <- coal_distance
 
-
 # Proportional Capacity ---------------------------------------------------
 
 #' Supplier Net Export capacity
@@ -69,7 +70,7 @@ pld$coal_distance <- coal_distance
 #' 
 
 find_proporsi_value <- function(rajungan){
-  coal_graphs$data[[rajungan]] %>% filter(value > 0) %>% 
+  oil_graphs$data[[rajungan]] %>% filter(value > 0) %>% filter(!exporter %in% rem_exporter_list) %>% 
     group_by(exporter) %>% 
     summarise(export = sum(value, na.rm = TRUE)) %>% 
     mutate(proporsi = export / sum(export)) %>% arrange(desc(proporsi))
@@ -124,8 +125,6 @@ proporsi_coal <- map(run_row, find_all_proporsi)
 ave_proporsi_coal <- map_dfr(run_row, find_average_proporsi)
 
 
-
-
 # Potential Suppliers Calculation -----------------------------------------
 
 #' In this section we use the UNSD M49 Standard to classify the potential suppliers of the energy commodities
@@ -165,7 +164,6 @@ oil_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(oil_suppliers = po
 
 # Find all the import data files in the folder
 ceks <- list.files("./energy balance/")
-
 
 import_balance <- map_dfr(seq(1:length(ceks)), run_balance)
 
