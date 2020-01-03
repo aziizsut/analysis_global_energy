@@ -15,7 +15,7 @@ table_indegree <- table_indegree %>%
 
 ggplot(data = table_indegree, aes(x = period, y = coal_indegree)) + geom_line() + facet_wrap(~importer)
 table_indegree %>% filter(importer == "NLD") %>% tail(n = 15L)
-table_indegree %>% filter(importer == "NLD") %>% tail(n = 15L)
+table_indegree %>% filter(importer == "ISL") %>% head(n = 25L)
 coba2 <- coba %>% select(period, importer, gas_indegree)
 
 table_indegree <- table_indegree %>% select(-gas_indegree) 
@@ -35,3 +35,8 @@ table_indegree <- table_indegree %>%
   mutate(coal_indegree = if_else(importer == "NLD" & period == 2016, 31, coal_indegree)) %>% 
   mutate(coal_indegree = if_else(importer == "NLD" & period == 2015, 30, coal_indegree)) %>% 
   mutate(coal_indegree = if_else(importer == "NLD" & period == 2017, 27, coal_indegree))
+
+table_indegree <- table_indegree %>% 
+  mutate(oil_indegree = if_else(importer == "ISL" & period == 1991, 1, oil_indegree)) %>% 
+  mutate(oil_indegree = if_else(importer == "ZAF" & period == 1991, 3, oil_indegree)) %>% 
+  mutate(oil_indegree = if_else(importer == "ZAF" & period == 1992, 3, oil_indegree)) 
