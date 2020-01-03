@@ -13,7 +13,7 @@ GDP_table <- read_csv("GDP.csv") %>%
   pivot_longer(-country, names_to = "period", values_to = "GDP") %>% 
   filter(country %in% country_list) %>% 
   filter(period %in% c(1991:2017))
-
+GDP_table <- GDP_table %>% mutate(period = as.numeric(period))
 
 # Capital Distance --------------------------------------------------------
 
@@ -59,7 +59,7 @@ table_distance <- pld %>% select(period, importer) %>% bind_cols(distance_coal, 
          gas_distance = colnames(.)[4],
          oil_distance = colnames(.)[5])
 
-pld$coal_distance <- coal_distance
+table_distance <- table_distance %>% mutate(period = as.numeric(period))
 
 # Proportional Capacity ---------------------------------------------------
 
@@ -158,6 +158,8 @@ oil_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(oil_suppliers = po
 coal_supplies <- coal_supplies %>% select(importer, years, coal_suppliers)
 table_suppliers <- left_join(coal_supplies, gas_supplies) %>% left_join(oil_supplies)
 
+table_suppliers <- table_suppliers %>% mutate_if(is.numeric,replace_na, 0)
+
 # Preparation for the Import Balance Data (import dependencies com --------
 #' The project must also contains the folders of import export data compared to the TPES
 #' Energy Balance database for this section can be obtained from the IEA energy Balance subscription
@@ -167,6 +169,15 @@ table_suppliers <- left_join(coal_supplies, gas_supplies) %>% left_join(oil_supp
 ceks <- list.files("./energy balance/")
 
 import_balance <- map_dfr(seq(1:length(ceks)), run_balance)
+
+table_import <- read_csv("import.csv") %>% 
+  left_join(table_import2)
+
+table_import <- table_import %>% mutate(
+  coal_import = net_coal / tot_energy_use,
+  gas_import = net_gas / tot_energy_use,
+  oil_import = net_oil / tot_energy_use
+)
 
 # run_balance function ----------------------------------------------------
 
@@ -185,4 +196,8 @@ run_balance <- function(iterator){
   
 }
 
+# To combine the independent variable tables
 
+table_independent <- left_join(GDP_table, table_distance, by = c("country" = "importer", "period")) %>% rename(importer = country) %>% 
+  left_join(table_suppliers) %>% left_join(table_import) %>% select(-c(net_coal:tot_energy_use))
+table_independent
