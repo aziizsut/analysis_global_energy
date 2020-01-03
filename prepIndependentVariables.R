@@ -153,9 +153,10 @@ find_suppliers <- function(nomor){
 
 # Don't forget to change the commodities name in the find_suppliers function corresponding to the energy commodity
 coal_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(coal_suppliers = pot_supplier)
-gas_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(gas_suppliers = pot_supplier)
-oil_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(oil_suppliers = pot_supplier)
-
+gas_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(gas_suppliers = pot_supplier) %>% select(importer, years, gas_suppliers)
+oil_supplies <- map_dfr(seq_years, find_suppliers) %>% rename(oil_suppliers = pot_supplier) %>% select(importer, years, oil_suppliers)
+coal_supplies <- coal_supplies %>% select(importer, years, coal_suppliers)
+table_suppliers <- left_join(coal_supplies, gas_supplies) %>% left_join(oil_supplies)
 
 # Preparation for the Import Balance Data (import dependencies com --------
 #' The project must also contains the folders of import export data compared to the TPES
@@ -184,13 +185,4 @@ run_balance <- function(iterator){
   
 }
 
-# testing environment -----------------------------------------------------
-# delete before submission
-
-testo <- coal_graphs$data[[1]] %>% filter(value > 0) %>% filter(!exporter %in% rem_exporter_list) %>% left_join(sub_region, by = c("exporter" = "ISO")) %>% 
-  rename(expt_reg = subs) %>% left_join(sub_region, by = c("importer" = "ISO")) %>% rename(imp_region = subs) %>% 
-  group_by(imp_region) #%>% 
-coba <- testo %>% summarise(pot_supplier = n()) 
-
-testo2 <- left_join(testo, coba) %>% ungroup() %>% select(importer, pot_supplier, imp_region) %>% distinct(importer, pot_supplier, imp_region) 
 

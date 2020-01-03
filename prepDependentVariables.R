@@ -97,3 +97,13 @@ table_rel_balance <- pld %>% select(period, importer) %>% bind_cols(rBalance_coa
 
 # please run the supplier turnover scripts first before joining all the table
 table_dependent <- left_join(table_indegree, table_rel_balance)
+
+
+
+# Additional Graph Objects ------------------------------------------------
+
+wuoy <- table_dependent %>% group_by(importer) %>% filter(period %in% c(1991, 2017)) %>% nest()
+find_growth <- function(countries){
+  return((wuoy$data[[countries]][2,] / wuoy$data[[countries]][1,])^(1/26) - 1)
+}
+growth_table <- map_dfr(seq_countries, find_growth)
