@@ -72,3 +72,40 @@ t.test(pre_T_gas, post_T_gas)
 pre_T_oil <- table_annual_turbulence %>% select(oil_T, period) %>% filter(period <= 4) %>% select(oil_T) %>% pull()
 post_T_oil <- table_annual_turbulence %>% select(oil_T, period) %>% filter(period >= 21 & period <= 24) %>% select(oil_T) %>% pull()
 t.test(pre_T_oil, post_T_oil)
+
+
+find_comparison <- function(nilai){
+  awal <- panel_table %>% filter(period <= 1995) %>% select(!!nilai) %>% pull()
+  baru <- panel_table %>% filter(period >= 2006 & period <= 2010) %>% select(!!nilai) %>% pull()
+  return(t.test(awal, baru))
+}
+
+find_comparison("oil_suppliers")
+
+find_comparison2 <- function(nilai){
+  
+  awal <- panel_table %>% filter(period <= 1995) %>% select(!!nilai) %>% pull()
+  baru <- panel_table %>% filter(period >= 2006 & period <= 2010) %>% select(!!nilai) %>% pull()
+  m_pre <- mean(awal, na.rm = TRUE)
+  d_pre <- sd(awal, na.rm = TRUE)
+  m_post <- mean(baru, na.rm = TRUE)
+  d_post <- sd(baru, na.rm = TRUE)
+  gabung <- cbind(m_pre, d_pre, m_post, d_post) %>% as.data.frame()
+  return(gabung)
+}
+
+
+find_comparison2("coal_import")
+find_comparison2("gas_import")
+find_comparison2("oil_import")
+find_comparison("coal_import")
+find_comparison("gas_import")
+find_comparison("oil_import")
+
+find_comparison2("coal_distance")
+find_comparison2("gas_distance")
+find_comparison2("oil_distance")
+find_comparison("coal_distance")
+find_comparison("gas_distance")
+find_comparison("oil_distance")
+

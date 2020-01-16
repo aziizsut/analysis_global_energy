@@ -1,5 +1,5 @@
 # Testing
-
+library(tidyverse)
 library(plm)
 library(sjPlot)
 
@@ -44,3 +44,7 @@ ggplot(gas_table, aes(x = log10(gas_distance), y = gas_indegree, group = importe
   facet_wrap( ~ importer, ncol = 4) + geom_point(alpha = 0.1, color = "darkgrey") + scale_y_continuous(limits = c(0, 40)) + theme_bw() +
   labs(x = "Distance",
        y = "Oil Trade Connections")
+
+
+
+

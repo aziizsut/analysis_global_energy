@@ -177,7 +177,8 @@ table_import <- table_import %>% mutate(
   coal_import = net_coal / tot_energy_use,
   gas_import = net_gas / tot_energy_use,
   oil_import = net_oil / tot_energy_use
-)
+) 
+
 
 # run_balance function ----------------------------------------------------
 
