@@ -139,3 +139,32 @@ coal_turb + gas_turb + oil_turb
 
 # Different Model Specifications ------------------------------------------
 
+library(tidyverse)
+country2 <- read_csv("UNSDm49.csv")
+
+panel_annual_turb %>% left_join(country2, by= c("importer" = "ISO")) -> annual_turb2
+
+annual_turb2 %>% filter(subs == "Eastern Asia" | subs == "Western Europe" | subs == "Northern Europe") %>%
+  select(importer, period, gas_T, region, subs) -> annual_turb3
+
+annual_turb3  %>% ggplot(aes(x = region, y = gas_T, fill = region)) + geom_boxplot(outlier.shape = NA) + theme_minimal() +
+  scale_y_continuous(label = scales::percent, limits = c(0, 0.5)) + 
+  annotate("text", x = "Europe", y = 0.45, size = 5,
+           label = "Median T Asia = 9.19% \nMedian T Europe = 5.58% \nWelch t-test p-value = 0.6474", hjust = 0) +
+  labs(y = "Supplier Turnover Gas",
+       x = "Importer Block",
+       caption = "*Outliers are removed") + 
+  theme(legend.position = "none",
+        axis.text = element_text(size = 14),
+        axis.title = element_text(face = "bold", size = 15))
+
+annual_turb3 %>% group_by(region) %>% summarise(m_gas = median(gas_T),
+                                                s_gas = sd(gas_T))
+
+annual_turb3 %>% filter(region == "Europe") %>% select(gas_T)  %>% pull() -> gas_eropa
+annual_turb3 %>% filter(region == "Asia") %>% select(gas_T)  %>% pull() -> gas_asia
+
+t.test(gas_eropa, gas_asia)
+
+panel_table %>% left_join(country2, by= c("importer" = "ISO"))
+

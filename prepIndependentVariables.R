@@ -28,6 +28,7 @@ distance_table <- read_csv("distance.csv") %>%
   filter(iso_d %in% country_list)
 # Only for the sampled countries
 
+# Here we calculate the distance between capitals of the importer and actual suppliers
 find_distance <- function(sotong){
   # First find the distance between the importer and supplier countries
   pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld_oil$importer[sotong]) %>% filter(!exporter %in% rem_exporter_list) %>% 
@@ -37,7 +38,7 @@ find_distance <- function(sotong){
   
 }
 
-
+# Here we calculate the weighted distance bilateral connections
 find_Mdistance <- function(sotong){
   
   pld_oil$data[[sotong]] %>% filter(value > 0) %>% mutate(importer = pld_oil$importer[sotong]) %>% filter(!exporter %in% rem_exporter_list) %>% 
